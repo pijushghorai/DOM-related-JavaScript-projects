@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+}
+
+span {
+    display: block;
+}
+
+.canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+}
+
+#purple {
+    background: purple;
+    cursor: pointer;
+}
+
+#violet {
+    background: violet;
+    cursor: pointer;
+}
+
+#yellow {
+    background: yellow;
+    cursor: pointer;
+}
+
+#green {
+    background: green;
+    cursor: pointer;
+}
+
+.defult-btn {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+.defult-btn:hover {
+    background-color: rgb(247, 247, 247);
+}
