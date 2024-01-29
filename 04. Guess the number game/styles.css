@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#wrapper {
+    text-align: center;
+    min-width: 40%;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(24, 24, 24, 0.372);
+    font-size: 25px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #02FFFF, #00BAFF); 
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.header p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#subt {
+    width: 50%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    background: linear-gradient(45deg, #02FFFF, #00BAFF);
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#subt:hover {
+    background: linear-gradient(45deg, #00BAFF, #02FFFF); 
+}
+
+#subt:active {
+    transform: scale(0.95);
+}
+
+#guessField {
+    width: 50%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.guess-container span {
+    color: #02FFFF;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.lastResult {
+    color: yellow;
+    font-weight: bolder;
+}
+
+.lowOrHi {
+    height: 100px;
+    color: #02FFFF;
+}
+
+@media screen and (min-width: 600px) {
+    .main {
+        min-height: 100vh;
+    }
+
+    #wrapper {
+        font-size: 30px;
+        height: auto;
+    }
+
+    #guess {
+        font-size: 55px;
+        margin-top: 0;
+    }
+}
