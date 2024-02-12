@@ -29,6 +29,10 @@ italic.addEventListener('click', function () {
     outputField.innerHTML = inputField.value.italics();
 })
 
+underline.addEventListener('click', function () {
+    outputField.innerHTML = '<u>' + inputField.value + '</u>';
+});
+
 
 
 
