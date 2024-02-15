@@ -7,5 +7,5 @@ const imgBtn = document.querySelector("#new-img");
 console.log(img);
 
 imgBtn.addEventListener("click", () => {
-  img.innerHTML = `<img src="${baseURL}*${Math.random()}" alt="New Img">`;
+  img.innerHTML = `<img src="${baseURL}*${Math.floor(Math.random() * 1000)}" alt="New Img">`;
 });
